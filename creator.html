@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html id="html">
+	<head>
+		<link rel="stylesheet" href="css/style.css">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body id="body">
+		<div id="dob">
+			<div class="header">
+				<img src="images/curls.png" style="width:10vw;height:10vw;transform:scale(-1, 1);">
+				<img src="images/gear.png" style="width:10vw;height:10vw;">
+				<img src="images/curls.png" style="width:10vw;height:10vw;">
+			</div>
+			<div class="header">Creator</div>
+			<div class="header">
+				<div><a href="instruction.html" style="text-decoration:none; color:black;">Инструкция</a></div>
+				<div><a href="index.html" style="text-decoration:none; color:black;">Главная страница</a></div>
+				<div><a href="author.html" style="text-decoration:none; color:black;">Об авторе</a></div>
+			</div>
+			<div style="display:flex; justify-content:center;">
+			<!--<img src="images/curls.png" style="width:10vw;height:12vw;transform:scale(-1, 1);">-->
+				<div class="save">
+					<input type="text" style="width:20vw;height:5vw;border-radius:50px;border: black solid 1px;font-size:0.2rem;display:block;" placeholder="название файла" id="namee">
+					<button class="butt"><a href="#" download="index.html" id="loadd1" download="index.html" onclick="create_file(0)">скачать черновик</a></button>
+					<button class="butt"><a href="#" download="index.html" id="loadd2" download="index.html" onclick="create_file(1)">скачать сайт</a></button>
+				</div>
+				<!--<img src="images/curls.png" style="width:10vw;height:12vw;">-->
+			</div>
+		</div>
+		<div class="elem" id="elem">
+			<!--<button style="width:100%;" onclick="moove(1)">up</button>
+			<button style="width:50%; float:left;" onclick="moove(4)">left</button>
+			<button style="width:50%; float:right;" onclick="moove(2)">right</button>
+			<button style="width:100%;" onclick="moove(3)">down</button>
+			<input type="text" style="width:96%;" placeholder="шаг сдвига" id="wid" onchange="moove(13)">
+			<input type="text" style="width:96%;" placeholder="длина в %" id="wid" onchange="moove(5)">
+			<input type="text" style="width:96%;" placeholder="ширина в px" id="heig" onchange="moove(6)">
+			<input type="text" style="width:96%;" placeholder="текст" id="tex" onchange="moove(7)">
+			<input type="text" style="width:96%;" placeholder="цвет" id="col" onchange="moove(11)">
+			<input type="number" style=" width:96%;" placeholder="слой" id="ind" onchange="moove(12)">
+			<button style="width:100%;" onclick="moove(9)">отмена</button>-->
+		</div>
+		<div style="height:15vw;">
+			<div style="width:20%;float:left;">сайт</div>
+			<hr style="width:70%;float:right;">
+		</div>
+		<div id="blockk">
+		</div>
+		<div style="height:15vw;">
+			<div style="width:20%;float:left;">сайт</div>
+			<hr style="width:70%;float:right;">
+		</div>
+		<div class="dob" id="dob1">
+			<button class="butt" style="font-size:0.3rem;" onclick="moove(9),create()">создать блок</button>
+			<button class="butt" style="font-size:0.3rem;" onclick="moove(9),create_a()">создать ссылку</button>
+			<button class="butt" style="font-size:0.3rem;" onclick="moove(9),create_img()">добавить картинку</button>
+		</div>
+	<script src="app.js"></script>
+	</body>
+</html>
