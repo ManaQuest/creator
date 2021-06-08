@@ -189,9 +189,9 @@ function moove(m,cl){
 	 load=new Blob([html.innerHTML],{type:'text/html'}); 
 	 loadd2.href=URL.createObjectURL(load);
 	 if(namee.value!='')
-		loadd1.download=namee.value;
+		loadd2.download=namee.value;
 	 else
-		loadd1.download='index.html';
+		loadd2.download='index.html';
 	 dob.style.display='block';
 	 dob1.style.display='block';
 	 }
